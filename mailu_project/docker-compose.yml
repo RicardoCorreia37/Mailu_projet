@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mailu:
+    image: ./mailu_image
+    volumes:
+      - ./mailData:/data
+    environment:
+      - MAILU_HOSTNAME=xpto.local
+      - MAILU_ADMIN=admin@xpto.local
+      - MAILU_ADMIN_PASSWORD=admin
+      - MAILU_ANTIVIRUS=none
+      - MAILU_SPAMASSASSIN=none
+ 
